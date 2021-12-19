@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+  <!-- Here start body. -->
+
+  <h1>Welcome to my website</h1>
+  <p title="my repository" class="heading">See my <a href="https://github.com/Rodrigosaforcada/CursoDeJava" target="_blank">repository</a>.</p>
+
+  <p class="heading">Know my next <a href="projects.htm" target="_blank">projects</a>.</p>
+
+  <p class="heading"><a href="#S1">Share your opinions</a></p>
+  <hr>
+  <p>Enjoy the views</p>
+
+  <ul>
+    <li><img src="../images/paisaje.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img src="../images/paisaje2.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img src="../images/paisaje3.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+  </ul>    
+  <map name="workmap">
+    <area shape="circle" coords="200,100,75" alt="views" href="../images/paisaje.jpg" onclick="myFunction()">
+    <area shape="circle" coords="200,100,75" alt="views" href="../images/paisaje2.jpg" onclick="myFunction()">
+    <area shape="circle" coords="200,100,75" alt="views" href="../images/paisaje3.jpg" onclick="myFunction()">
+  </map>
+  
+
+  <script>
+  function myFunction() {
+    alert("You clicked the scenary!");
+  }
+  </script>
+
+  <hr>
+  
+  <p id="gratitude">Your contribution would help a lot.</p>
+  <div>
+    <button id="S1" onclick="displayResult()">Share</button>
+  </div>
+
+  <script>
+  function displayResult() {
+    document.getElementById("gratitude").innerHTML = "Thanks a lot!";
+    document.getElementById("gratitude").style.fontSize = "180%";
+    document.getElementById("gratitude").style.color = "red";
+    document.getElementById("gratitude").style.backgroundColor = "rgba(255, 255, 77,0.65)";
+  }
+  </script>
+
+</body>
+</html>
