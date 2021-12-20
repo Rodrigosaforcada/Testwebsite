@@ -22,9 +22,12 @@
   <p>Enjoy the views</p>
 
   <ul>
-    <li><img src="../images/paisaje.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
-    <li><img src="../images/paisaje2.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
-    <li><img src="../images/paisaje3.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img id="img1" src="../images/paisaje.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><button onclick="document.getElementById('img1').src='../images/paisaje4.jpg'">See more</button></li>
+    <li><img id="img2" src="../images/paisaje2.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><button onclick="document.getElementById('img2').src='../images/paisaje5.jpg'">See more</button></li>
+    <li><img id="img3" src="../images/paisaje3.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><button onclick="document.getElementById('img3').src='../images/paisaje6.jpg'">See more</button></li>
   </ul>    
   <map name="workmap">
     <area shape="circle" coords="200,100,75" alt="views" href="../images/paisaje.jpg" onclick="myFunction()">
