@@ -12,6 +12,7 @@ h1 {
   font-family:"imperial";
 }
 p {
+  font-family:"lucida calligraphy";
   color: #ffffff;
   font-size:140%; 
   background-color:rgba(0,0,100,0.4);
@@ -86,7 +87,10 @@ button {
   color: rgb(230, 230, 0);
   font-size:140%; 
   background-color:rgba(50,200,50,0.4);
-  border: 3px groove DodgerBlue;
+  border-left: 3px ridge DodgerBlue;
+  border-bottom: 1px ridge DodgerBlue;
+  border-right: none;
+  border-top: none;
   border-radius: 12px;
   padding: 8px 30px;
 }

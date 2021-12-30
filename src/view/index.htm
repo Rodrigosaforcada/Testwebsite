@@ -22,11 +22,11 @@
   <p>Enjoy the views</p>
 
   <ul>
-    <li><img id="img1" src="../images/paisaje.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img onmouseover="expand1()" onmouseout="contract1()" id="img1" src="../images/paisaje.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
     <li><button onclick="document.getElementById('img1').src='../images/paisaje4.jpg'">See more</button></li>
-    <li><img id="img2" src="../images/paisaje2.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img onmouseover="expand2()" onmouseout="contract2()" id="img2" src="../images/paisaje2.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
     <li><button onclick="document.getElementById('img2').src='../images/paisaje5.jpg'">See more</button></li>
-    <li><img id="img3" src="../images/paisaje3.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
+    <li><img onmouseover="expand3()" onmouseout="contract3()" id="img3" src="../images/paisaje3.jpg" alt="paisaje" title="paisaje" usemap="#workmap"></li>
     <li><button onclick="document.getElementById('img3').src='../images/paisaje6.jpg'">See more</button></li>
   </ul>    
   <map name="workmap">
@@ -35,13 +35,6 @@
     <area shape="circle" coords="200,100,75" alt="views" href="../images/paisaje3.jpg" onclick="myFunction()">
   </map>
   
-
-  <script>
-  function myFunction() {
-    alert("You clicked the scenary!");
-  }
-  </script>
-
   <hr>
   
   <p id="gratitude">Your contribution would help a lot.</p>
@@ -49,14 +42,7 @@
     <button id="S1" onclick="displayResult()">Share</button>
   </div>
 
-  <script>
-  function displayResult() {
-    document.getElementById("gratitude").innerHTML = "Thanks a lot!";
-    document.getElementById("gratitude").style.fontSize = "180%";
-    document.getElementById("gratitude").style.color = "red";
-    document.getElementById("gratitude").style.backgroundColor = "rgba(255, 255, 77,0.65)";
-  }
-  </script>
+  <script src="../js/behaviour.js"></script>
 
 </body>
 </html>
